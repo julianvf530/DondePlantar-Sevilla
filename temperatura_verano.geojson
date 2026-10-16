@@ -1,0 +1,197 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "distrito": "Casco Antiguo",
+        "temp_max_media_verano": 37.2,
+        "anomalia_isla_calor": 1.5,
+        "nivel_riesgo": "Medio-Alto"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.994,
+          37.391
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "distrito": "Poligono Sur",
+        "temp_max_media_verano": 38.8,
+        "anomalia_isla_calor": 3.1,
+        "nivel_riesgo": "Muy Alto"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.975,
+          37.362
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "distrito": "Los Pajaritos / Tres Barrios",
+        "temp_max_media_verano": 38.6,
+        "anomalia_isla_calor": 2.9,
+        "nivel_riesgo": "Muy Alto"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.958,
+          37.385
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "distrito": "Torreblanca",
+        "temp_max_media_verano": 38.9,
+        "anomalia_isla_calor": 3.2,
+        "nivel_riesgo": "Muy Alto"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.918,
+          37.382
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "distrito": "Triana",
+        "temp_max_media_verano": 36.8,
+        "anomalia_isla_calor": 1.1,
+        "nivel_riesgo": "Medio"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.003,
+          37.383
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "distrito": "Macarena",
+        "temp_max_media_verano": 38.1,
+        "anomalia_isla_calor": 2.4,
+        "nivel_riesgo": "Alto"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.985,
+          37.408
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "distrito": "Pino Montano",
+        "temp_max_media_verano": 38.4,
+        "anomalia_isla_calor": 2.7,
+        "nivel_riesgo": "Alto"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.972,
+          37.425
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "distrito": "San Pablo / Santa Justa",
+        "temp_max_media_verano": 37.9,
+        "anomalia_isla_calor": 2.2,
+        "nivel_riesgo": "Alto"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.968,
+          37.398
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "distrito": "Nervion",
+        "temp_max_media_verano": 37.6,
+        "anomalia_isla_calor": 1.9,
+        "nivel_riesgo": "Medio-Alto"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.974,
+          37.384
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "distrito": "Este-Alcosa-Torreblanca (Residencial)",
+        "temp_max_media_verano": 38.2,
+        "anomalia_isla_calor": 2.5,
+        "nivel_riesgo": "Alto"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.928,
+          37.405
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "distrito": "Los Remedios",
+        "temp_max_media_verano": 36.5,
+        "anomalia_isla_calor": 0.8,
+        "nivel_riesgo": "Bajo-Medio"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.001,
+          37.373
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "distrito": "Bellavista - La Palmera",
+        "temp_max_media_verano": 37.4,
+        "anomalia_isla_calor": 1.7,
+        "nivel_riesgo": "Medio-Alto"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.979,
+          37.341
+        ]
+      }
+    }
+  ]
+}

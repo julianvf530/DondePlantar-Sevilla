@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dónde plantar primero · Sevilla</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <aside class="panel">
+    <header>
+      <h1>Dónde plantar primero</h1>
+      <p class="lema">Prioriza las posiciones viables de arbolado con más calor, más contaminación y menos sombra.</p>
+    </header>
+
+    <section aria-labelledby="t-zona">
+      <h2 id="t-zona">Zona</h2>
+      <label for="barrio">Barrio</label>
+      <select id="barrio"><option value="">Toda la ciudad</option></select>
+    </section>
+
+    <section aria-labelledby="t-crit">
+      <h2 id="t-crit">Qué pesa más</h2>
+      <label>Calor del entorno <output id="o-w_calor"></output>
+        <input id="w_calor" type="range" min="0" max="100" value="50"></label>
+      <label>Contaminación <output id="o-w_contam"></output>
+        <input id="w_contam" type="range" min="0" max="100" value="20"></label>
+      <label>Falta de sombra <output id="o-w_sombra"></output>
+        <input id="w_sombra" type="range" min="0" max="100" value="50"></label>
+      <div class="presets">
+        <button type="button" data-w_calor="80" data-w_contam="10" data-w_sombra="50">Ola de calor</button>
+        <button type="button" data-w_calor="20" data-w_contam="80" data-w_sombra="30">Calidad del aire</button>
+        <button type="button" data-w_calor="33" data-w_contam="33" data-w_sombra="33">Equilibrado</button>
+      </div>
+    </section>
+
+    <section aria-labelledby="t-alcance">
+      <h2 id="t-alcance">Cuánto plantar</h2>
+      <div class="modo" role="radiogroup" aria-label="Fijar el alcance por">
+        <label><input type="radio" name="modo" value="arboles" checked> Nº de árboles</label>
+        <label><input type="radio" name="modo" value="presupuesto"> Presupuesto (€)</label>
+      </div>
+      <div id="bloque-arboles">
+        <label for="n">Árboles a plantar <small>de 1 a 1.000</small></label>
+        <input id="n" type="number" inputmode="numeric" min="1" max="1000" step="1" value="100">
+      </div>
+      <div id="bloque-presupuesto" hidden>
+        <label for="presupuesto">Presupuesto (€)</label>
+        <input id="presupuesto" type="number" inputmode="numeric" min="1000" max="50000000" step="1000" value="50000">
+        <p class="nota" id="o-presupuesto"></p>
+        <label for="coste">Coste por árbol plantado (€) <small>supuesto editable</small></label>
+        <input id="coste" type="number" min="50" max="10000" step="50" value="400">
+      </div>
+      <label>Máximo por calle <output id="o-max_por_calle"></output>
+        <input id="max_por_calle" type="range" min="1" max="50" value="15"></label>
+    </section>
+
+    <section aria-labelledby="t-kpi">
+      <h2 id="t-kpi">Impacto estimado</h2>
+      <dl class="kpis">
+        <div><dd id="k-arboles">–</dd><dt>árboles en</dt></div>
+        <div><dd id="k-calles">–</dd><dt>calles</dt></div>
+        <div><dd id="k-sombra">–</dd><dt>m² de sombra</dt></div>
+        <div><dd id="k-co2">–</dd><dt>kg CO₂ al año</dt></div>
+      </dl>
+      <p class="nota" id="k-coste"></p>
+      <p class="nota" id="k-azar"></p>
+      <p class="aviso" id="k-aviso" hidden></p>
+    </section>
+
+    <section aria-labelledby="t-barrios">
+      <h2 id="t-barrios">Por barrio</h2>
+      <ol id="barrios" class="lista"></ol>
+    </section>
+
+    <section aria-labelledby="t-top">
+      <h2 id="t-top">Primeras 10 posiciones</h2>
+      <ol id="top" class="lista"></ol>
+      <a id="exportar" class="boton" href="/api/exportar.csv">Descargar plan completo (CSV)</a>
+    </section>
+
+    <footer>
+      <details>
+        <summary>Datos y supuestos</summary>
+        <p id="datos"></p>
+        <pre id="supuestos"></pre>
+      </details>
+      <p id="estado" role="status"></p>
+    </footer>
+  </aside>
+  <main id="mapa" aria-label="Mapa de Sevilla"></main>
+  <script src="app.js"></script>
+</body>
+</html>
